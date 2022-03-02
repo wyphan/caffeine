@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="A parallel runtime library supporting standard Fortran features.">
-    <meta name="author" content="" >
+   <meta name="description" content="Library functions and derived types implementing the parallel features of Fortran 2018.">
+    <meta name="author" content="Lawrence Berkeley National Laboratory" >
     <link rel="icon" href="../favicon.png">
 
-    <title>caf_stop &ndash; Caffeine library</title>
+    <title>caf_stop &ndash; Caffeine</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link href="../css/user.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">Caffeine library </a>
+          <a class="navbar-brand" href="../index.html">Caffeine </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -117,8 +118,8 @@
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-0">Subroutines</a></h3></div>
   <div class="list-group">
     <div id="subs-0" class="panel-collapse collapse">
-      <a class="list-group-item" href="../interface/caf_stop.html#proc-caf_stop_integer">caf_stop_integer</a>
       <a class="list-group-item" href="../interface/caf_stop.html#proc-caf_stop_character">caf_stop_character</a>
+      <a class="list-group-item" href="../interface/caf_stop.html#proc-caf_stop_integer">caf_stop_integer</a>
     </div>
   </div>
 </div>
@@ -138,8 +139,8 @@
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#subs-1">Subroutines</a></h3></div>
   <div class="list-group">
     <div id="subs-1" class="panel-collapse collapse">
-      <a class="list-group-item" href="../interface/caf_stop.html#proc-caf_stop_integer">caf_stop_integer</a>
       <a class="list-group-item" href="../interface/caf_stop.html#proc-caf_stop_character">caf_stop_character</a>
+      <a class="list-group-item" href="../interface/caf_stop.html#proc-caf_stop_integer">caf_stop_integer</a>
     </div>
   </div>
 </div>
@@ -149,27 +150,6 @@
      
 
    <h2>Subroutines</h2>
-      <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-caf_stop_integer"></span><h3>private module subroutine caf_stop_integer(stop_code)</h3></div>
-  <div class="panel-body">
-       <p>synchronize, stop the executing image, and provide the stop_code (or 0 if not present) as the process exit status</p>
-    
-<h4>Arguments</h4>      <table class="table table-striped varlist">
-<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
-<tbody>
-<tr>
-  <td><span class="anchor" ></span>integer,</td>
-<td>intent(in),</td>
-  <td>optional</td>  <td></td><td>::</td>
-  <td><strong>stop_code</strong></td><td></td>
-</tr>
-</tbody>
-</table>
-
-
-  </div>
-  </div>
-
       <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="proc-caf_stop_character"></span><h3>private module subroutine caf_stop_character(stop_code)</h3></div>
   <div class="panel-body">
@@ -191,6 +171,27 @@
   </div>
   </div>
 
+      <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-caf_stop_integer"></span><h3>private module subroutine caf_stop_integer(stop_code)</h3></div>
+  <div class="panel-body">
+       <p>synchronize, stop the executing image, and provide the stop_code (or 0 if not present) as the process exit status</p>
+    
+<h4>Arguments</h4>      <table class="table table-striped varlist">
+<thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
+<tbody>
+<tr>
+  <td><span class="anchor" ></span>integer,</td>
+<td>intent(in),</td>
+  <td>optional</td>  <td></td><td>::</td>
+  <td><strong>stop_code</strong></td><td></td>
+</tr>
+</tbody>
+</table>
+
+
+  </div>
+  </div>
+
 
 
  </div>
@@ -201,14 +202,14 @@
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>Caffeine library was developed by <br>&copy; 2022 
+        <div class="col-xs-6 col-md-6"><p>Caffeine was developed by Lawrence Berkeley National Laboratory<br>&copy; 2022 
 </p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-          </p>
+ on 2022-03-02 15:00            </p>
         </div>
       </div>
       <br>

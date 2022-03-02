@@ -5,17 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="A parallel runtime library supporting standard Fortran features.">
-    <meta name="author" content="" >
+   <meta name="description" content="Library functions and derived types implementing the parallel features of Fortran 2018.">
+    <meta name="author" content="Lawrence Berkeley National Laboratory" >
     <link rel="icon" href="../favicon.png">
 
-    <title>caf_c_is_f_string &ndash; Caffeine library</title>
+    <title>caf_c_is_f_string &ndash; Caffeine</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link href="../css/user.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -40,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">Caffeine library </a>
+          <a class="navbar-brand" href="../index.html">Caffeine </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -146,20 +147,20 @@
 <polygon fill="none" stroke="black" points="572,-55 474,-55 474,-31 572,-31 572,-55"/>
 <text text-anchor="middle" x="523" y="-40.6" font-family="Helvetica,sans-Serif" font-size="10.50">caf_c_is_f_string</text>
 </g>
-<!-- proc~caf_co_min -->
+<!-- proc~caf_co_max -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_node2" class="node">
-<title>proc~caf_co_min</title>
-<g id="a_interface~~caf_c_is_f_string~~CalledByGraph_node2"><a xlink:href=".././proc/caf_co_min.html" xlink:title="caf_co_min">
-<polygon fill="#d9534f" stroke="#d9534f" points="186.5,-24 113.5,-24 113.5,0 186.5,0 186.5,-24"/>
-<text text-anchor="middle" x="150" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caf_co_min</text>
+<title>proc~caf_co_max</title>
+<g id="a_interface~~caf_c_is_f_string~~CalledByGraph_node2"><a xlink:href=".././proc/caf_co_max.html" xlink:title="caf_co_max">
+<polygon fill="#d9534f" stroke="#d9534f" points="188,-24 112,-24 112,0 188,0 188,-24"/>
+<text text-anchor="middle" x="150" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caf_co_max</text>
 </a>
 </g>
 </g>
-<!-- proc~caf_co_min&#45;&gt;interface~caf_c_is_f_string -->
+<!-- proc~caf_co_max&#45;&gt;interface~caf_c_is_f_string -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_edge1" class="edge">
-<title>proc~caf_co_min&#45;&gt;interface~caf_c_is_f_string</title>
-<path fill="none" stroke="#000000" d="M186.56,-10.85C241,-9.63 348.15,-9.35 438,-22 448.83,-23.52 460.28,-25.88 471.13,-28.47"/>
-<polygon fill="#000000" stroke="#000000" points="470.35,-31.88 480.9,-30.89 472.04,-25.08 470.35,-31.88"/>
+<title>proc~caf_co_max&#45;&gt;interface~caf_c_is_f_string</title>
+<path fill="none" stroke="#ff0000" d="M188.37,-10.81C243.35,-9.63 349.13,-9.49 438,-22 448.83,-23.52 460.28,-25.88 471.13,-28.47"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="470.35,-31.88 480.9,-30.89 472.04,-25.08 470.35,-31.88"/>
 </g>
 <!-- interface~caf_co_reduce -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_node7" class="node">
@@ -170,11 +171,11 @@
 </a>
 </g>
 </g>
-<!-- proc~caf_co_min&#45;&gt;interface~caf_co_reduce -->
+<!-- proc~caf_co_max&#45;&gt;interface~caf_co_reduce -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_edge7" class="edge">
-<title>proc~caf_co_min&#45;&gt;interface~caf_co_reduce</title>
-<path fill="none" stroke="#000000" d="M186.59,-21.47C195.33,-23.8 204.88,-26.34 214.25,-28.83"/>
-<polygon fill="#000000" stroke="#000000" points="213.35,-32.21 223.91,-31.4 215.15,-25.45 213.35,-32.21"/>
+<title>proc~caf_co_max&#45;&gt;interface~caf_co_reduce</title>
+<path fill="none" stroke="#0000ff" d="M188.18,-21.89C196.41,-24.08 205.28,-26.44 214.01,-28.77"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="213.2,-32.17 223.76,-31.36 215,-25.41 213.2,-32.17"/>
 </g>
 <!-- proc~caf_co_reduce -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_node3" class="node">
@@ -188,65 +189,65 @@
 <!-- proc~caf_co_reduce&#45;&gt;interface~caf_c_is_f_string -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_edge2" class="edge">
 <title>proc~caf_co_reduce&#45;&gt;interface~caf_c_is_f_string</title>
-<path fill="none" stroke="#000000" d="M438.02,-43C446.32,-43 455.12,-43 463.79,-43"/>
-<polygon fill="#000000" stroke="#000000" points="463.87,-46.5 473.87,-43 463.87,-39.5 463.87,-46.5"/>
+<path fill="none" stroke="#ff0000" d="M438.02,-43C446.32,-43 455.12,-43 463.79,-43"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="463.87,-46.5 473.87,-43 463.87,-39.5 463.87,-46.5"/>
 </g>
-<!-- proc~caf_co_max -->
+<!-- proc~caf_co_min -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_node4" class="node">
-<title>proc~caf_co_max</title>
-<g id="a_interface~~caf_c_is_f_string~~CalledByGraph_node4"><a xlink:href=".././proc/caf_co_max.html" xlink:title="caf_co_max">
-<polygon fill="#d9534f" stroke="#d9534f" points="188,-85 112,-85 112,-61 188,-61 188,-85"/>
-<text text-anchor="middle" x="150" y="-70.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caf_co_max</text>
+<title>proc~caf_co_min</title>
+<g id="a_interface~~caf_c_is_f_string~~CalledByGraph_node4"><a xlink:href=".././proc/caf_co_min.html" xlink:title="caf_co_min">
+<polygon fill="#d9534f" stroke="#d9534f" points="186.5,-85 113.5,-85 113.5,-61 186.5,-61 186.5,-85"/>
+<text text-anchor="middle" x="150" y="-70.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caf_co_min</text>
 </a>
 </g>
 </g>
-<!-- proc~caf_co_max&#45;&gt;interface~caf_c_is_f_string -->
+<!-- proc~caf_co_min&#45;&gt;interface~caf_c_is_f_string -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_edge3" class="edge">
-<title>proc~caf_co_max&#45;&gt;interface~caf_c_is_f_string</title>
-<path fill="none" stroke="#000000" d="M188.37,-74.36C243.34,-75.79 349.12,-76.36 438,-64 448.94,-62.48 460.53,-60.1 471.48,-57.48"/>
-<polygon fill="#000000" stroke="#000000" points="472.47,-60.84 481.33,-55.03 470.78,-54.05 472.47,-60.84"/>
+<title>proc~caf_co_min&#45;&gt;interface~caf_c_is_f_string</title>
+<path fill="none" stroke="#ff0000" d="M186.55,-74.31C240.99,-75.77 348.14,-76.5 438,-64 448.94,-62.48 460.53,-60.1 471.48,-57.48"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="472.47,-60.84 481.33,-55.03 470.78,-54.05 472.47,-60.84"/>
 </g>
-<!-- proc~caf_co_max&#45;&gt;interface~caf_co_reduce -->
+<!-- proc~caf_co_min&#45;&gt;interface~caf_co_reduce -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_edge8" class="edge">
-<title>proc~caf_co_max&#45;&gt;interface~caf_co_reduce</title>
-<path fill="none" stroke="#000000" d="M188.18,-63.43C196.41,-61.31 205.28,-59.02 214.01,-56.77"/>
-<polygon fill="#000000" stroke="#000000" points="214.95,-60.15 223.76,-54.26 213.2,-53.37 214.95,-60.15"/>
-</g>
-<!-- interface~caf_co_max -->
-<g id="interface~~caf_c_is_f_string~~CalledByGraph_node5" class="node">
-<title>interface~caf_co_max</title>
-<g id="a_interface~~caf_c_is_f_string~~CalledByGraph_node5"><a xlink:href=".././interface/caf_co_max.html" xlink:title="caf_co_max">
-<polygon fill="#a7506f" stroke="#a7506f" points="76,-85 0,-85 0,-61 76,-61 76,-85"/>
-<text text-anchor="middle" x="38" y="-70.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caf_co_max</text>
-</a>
-</g>
-</g>
-<!-- interface~caf_co_max&#45;&gt;proc~caf_co_max -->
-<g id="interface~~caf_c_is_f_string~~CalledByGraph_edge6" class="edge">
-<title>interface~caf_co_max&#45;&gt;proc~caf_co_max</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M76.24,-73C84.39,-73 93.13,-73 101.62,-73"/>
-<polygon fill="#000000" stroke="#000000" points="101.8,-76.5 111.8,-73 101.8,-69.5 101.8,-76.5"/>
+<title>proc~caf_co_min&#45;&gt;interface~caf_co_reduce</title>
+<path fill="none" stroke="#0000ff" d="M186.59,-63.84C195.24,-61.61 204.67,-59.18 213.95,-56.79"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="215.1,-60.11 223.91,-54.22 213.36,-53.33 215.1,-60.11"/>
 </g>
 <!-- interface~caf_co_min -->
-<g id="interface~~caf_c_is_f_string~~CalledByGraph_node6" class="node">
+<g id="interface~~caf_c_is_f_string~~CalledByGraph_node5" class="node">
 <title>interface~caf_co_min</title>
-<g id="a_interface~~caf_c_is_f_string~~CalledByGraph_node6"><a xlink:href=".././interface/caf_co_min.html" xlink:title="caf_co_min">
-<polygon fill="#a7506f" stroke="#a7506f" points="74.5,-24 1.5,-24 1.5,0 74.5,0 74.5,-24"/>
-<text text-anchor="middle" x="38" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caf_co_min</text>
+<g id="a_interface~~caf_c_is_f_string~~CalledByGraph_node5"><a xlink:href=".././interface/caf_co_min.html" xlink:title="caf_co_min">
+<polygon fill="#a7506f" stroke="#a7506f" points="74.5,-85 1.5,-85 1.5,-61 74.5,-61 74.5,-85"/>
+<text text-anchor="middle" x="38" y="-70.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caf_co_min</text>
 </a>
 </g>
 </g>
 <!-- interface~caf_co_min&#45;&gt;proc~caf_co_min -->
-<g id="interface~~caf_c_is_f_string~~CalledByGraph_edge4" class="edge">
+<g id="interface~~caf_c_is_f_string~~CalledByGraph_edge6" class="edge">
 <title>interface~caf_co_min&#45;&gt;proc~caf_co_min</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M74.71,-12C83.84,-12 93.77,-12 103.31,-12"/>
-<polygon fill="#000000" stroke="#000000" points="103.47,-15.5 113.47,-12 103.47,-8.5 103.47,-15.5"/>
+<path fill="none" stroke="#0000ff" stroke-dasharray="5,2" d="M74.71,-73C83.84,-73 93.77,-73 103.31,-73"/>
+<polygon fill="#0000ff" stroke="#0000ff" points="103.47,-76.5 113.47,-73 103.47,-69.5 103.47,-76.5"/>
+</g>
+<!-- interface~caf_co_max -->
+<g id="interface~~caf_c_is_f_string~~CalledByGraph_node6" class="node">
+<title>interface~caf_co_max</title>
+<g id="a_interface~~caf_c_is_f_string~~CalledByGraph_node6"><a xlink:href=".././interface/caf_co_max.html" xlink:title="caf_co_max">
+<polygon fill="#a7506f" stroke="#a7506f" points="76,-24 0,-24 0,0 76,0 76,-24"/>
+<text text-anchor="middle" x="38" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caf_co_max</text>
+</a>
+</g>
+</g>
+<!-- interface~caf_co_max&#45;&gt;proc~caf_co_max -->
+<g id="interface~~caf_c_is_f_string~~CalledByGraph_edge4" class="edge">
+<title>interface~caf_co_max&#45;&gt;proc~caf_co_max</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M76.24,-12C84.39,-12 93.13,-12 101.62,-12"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="101.8,-15.5 111.8,-12 101.8,-8.5 101.8,-15.5"/>
 </g>
 <!-- interface~caf_co_reduce&#45;&gt;proc~caf_co_reduce -->
 <g id="interface~~caf_c_is_f_string~~CalledByGraph_edge5" class="edge">
 <title>interface~caf_co_reduce&#45;&gt;proc~caf_co_reduce</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M313.21,-43C321.46,-43 330.17,-43 338.69,-43"/>
-<polygon fill="#000000" stroke="#000000" points="338.93,-46.5 348.93,-43 338.93,-39.5 338.93,-46.5"/>
+<path fill="none" stroke="#00ff00" stroke-dasharray="5,2" d="M313.21,-43C321.46,-43 330.17,-43 338.69,-43"/>
+<polygon fill="#00ff00" stroke="#00ff00" points="338.93,-46.5 348.93,-43 338.93,-39.5 338.93,-46.5"/>
 </g>
 </g>
 </svg>
@@ -306,13 +307,13 @@
     <p>Solid arrows point from a procedure to one which it calls. Dashed 
     arrows point from an interface to procedures which implement that interface.
     This could include the module procedures in a generic interface or the
-    implementation in a submodule of an interface in a parent module.
+    implementation in a submodule of an interface in a parent module. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
     </p>
     </div></div></div></div>
       </div>
     </div>
     <br>
-      <h2>public pure function caf_c_is_f_string(a) bind(C)</h2>
+      <h2>public pure function caf_c_is_f_string(a) bind(c)</h2>
 
     
 
@@ -321,7 +322,7 @@
 <thead><tr><th>Type</th><th>Intent</th><th>Optional</th><th>Attributes</th><th></th><th>Name</th><th></th></thead>
 <tbody>
 <tr>
-  <td><span class="anchor" id="variable-a~8"></span>type(*),</td>
+  <td><span class="anchor" id="variable-a~12"></span>type(*),</td>
 <td>intent(in)</td>
   <td></td>  <td></td><td>::</td>
   <td><strong>a</strong>(..)</td><td></td>
@@ -343,14 +344,14 @@
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>Caffeine library was developed by <br>&copy; 2022 
+        <div class="col-xs-6 col-md-6"><p>Caffeine was developed by Lawrence Berkeley National Laboratory<br>&copy; 2022 
 </p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-          </p>
+ on 2022-03-02 15:00            </p>
         </div>
       </div>
       <br>

@@ -4,17 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-   <meta name="description" content="A parallel runtime library supporting standard Fortran features.">
-    <meta name="author" content="" >
+   <meta name="description" content="Library functions and derived types implementing the parallel features of Fortran 2018.">
+    <meta name="author" content="Lawrence Berkeley National Laboratory" >
     <link rel="icon" href="../favicon.png">
 
-    <title>program_termination_s &ndash; Caffeine library</title>
+    <title>program_termination_s &ndash; Caffeine</title>
 
     <link href="../css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/pygments.css" rel="stylesheet">
     <link href="../css/font-awesome.min.css" rel="stylesheet">
     <link href="../css/local.css" rel="stylesheet">
     <link  href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    <link href="../css/user.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="../index.html">Caffeine library </a>
+          <a class="navbar-brand" href="../index.html">Caffeine </a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -116,10 +117,10 @@
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#modprocs-0">Module Procedures</a></h3></div>
   <div id="modprocs-0" class="panel-collapse collapse">
     <div class="list-group">
-      <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_stop_integer">caf_stop_integer</a>
-      <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_stop_character">caf_stop_character</a>
       <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_error_stop_character">caf_error_stop_character</a>
       <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_error_stop_integer">caf_error_stop_integer</a>
+      <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_stop_character">caf_stop_character</a>
+      <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_stop_integer">caf_stop_integer</a>
     </div>
   </div>
 </div>
@@ -137,9 +138,9 @@
       <ul class="list-group">
       <li class="list-group-item">
   <ul class="list-inline">
-    <li><a href="http://fortranwiki.org/fortran/show/iso_fortran_env">iso_fortran_env</a></li>
+    <li><a href="https://gcc.gnu.org/onlinedocs/gfortran/ISO_005fC_005fBINDING.html#ISO_005fC_005fBINDING">iso_c_binding</a></li>
     <li><a href='../module/caffeine_h_m.html'>caffeine_h_m</a></li>
-    <li><a href="http://fortranwiki.org/fortran/show/iso_c_binding">iso_c_binding</a></li>
+    <li><a href="https://gcc.gnu.org/onlinedocs/gfortran/ISO_005fFORTRAN_005fENV.html">iso_fortran_env</a></li>
   </ul>
       </li>
       <li class="list-group-item">
@@ -166,71 +167,71 @@
 <polygon fill="none" stroke="black" points="434,-84 298,-84 298,-60 434,-60 434,-84"/>
 <text text-anchor="middle" x="366" y="-69.6" font-family="Helvetica,sans-Serif" font-size="10.50">program_termination_s</text>
 </g>
-<!-- iso_fortran_env -->
-<g id="module~~program_termination_s~~UsesGraph_node2" class="node">
-<title>iso_fortran_env</title>
-<g id="a_module~~program_termination_s~~UsesGraph_node2"><a xlink:href="http://fortranwiki.org/fortran/show/iso_fortran_env" xlink:title="iso_fortran_env">
-<polygon fill="#337ab7" stroke="#337ab7" points="238,-146 144,-146 144,-122 238,-122 238,-146"/>
-<text text-anchor="middle" x="191" y="-131.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
-</a>
-</g>
-</g>
-<!-- module~program_termination_s&#45;&gt;iso_fortran_env -->
-<g id="module~~program_termination_s~~UsesGraph_edge1" class="edge">
-<title>module~program_termination_s&#45;&gt;iso_fortran_env</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M336.39,-84.17C315.86,-92.71 287.45,-104.14 262,-113 256.32,-114.98 250.34,-116.94 244.37,-118.83"/>
-<polygon fill="#000000" stroke="#000000" points="242.9,-115.63 234.39,-121.93 244.98,-122.31 242.9,-115.63"/>
-</g>
 <!-- module~caffeine_h_m -->
-<g id="module~~program_termination_s~~UsesGraph_node3" class="node">
+<g id="module~~program_termination_s~~UsesGraph_node2" class="node">
 <title>module~caffeine_h_m</title>
-<g id="a_module~~program_termination_s~~UsesGraph_node3"><a xlink:href=".././module/caffeine_h_m.html" xlink:title="caffeine_h_m">
-<polygon fill="#337ab7" stroke="#337ab7" points="233,-104 149,-104 149,-80 233,-80 233,-104"/>
-<text text-anchor="middle" x="191" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caffeine_h_m</text>
+<g id="a_module~~program_termination_s~~UsesGraph_node2"><a xlink:href=".././module/caffeine_h_m.html" xlink:title="caffeine_h_m">
+<polygon fill="#337ab7" stroke="#337ab7" points="233,-146 149,-146 149,-122 233,-122 233,-146"/>
+<text text-anchor="middle" x="191" y="-131.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">caffeine_h_m</text>
 </a>
 </g>
 </g>
 <!-- module~program_termination_s&#45;&gt;module~caffeine_h_m -->
-<g id="module~~program_termination_s~~UsesGraph_edge2" class="edge">
+<g id="module~~program_termination_s~~UsesGraph_edge1" class="edge">
 <title>module~program_termination_s&#45;&gt;module~caffeine_h_m</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M297.62,-79.79C279.63,-81.87 260.47,-84.08 243.49,-86.05"/>
-<polygon fill="#000000" stroke="#000000" points="242.75,-82.61 233.22,-87.23 243.56,-89.56 242.75,-82.61"/>
-</g>
-<!-- iso_c_binding -->
-<g id="module~~program_termination_s~~UsesGraph_node4" class="node">
-<title>iso_c_binding</title>
-<g id="a_module~~program_termination_s~~UsesGraph_node4"><a xlink:href="http://fortranwiki.org/fortran/show/iso_c_binding" xlink:title="iso_c_binding">
-<polygon fill="#337ab7" stroke="#337ab7" points="84,-84 0,-84 0,-60 84,-60 84,-84"/>
-<text text-anchor="middle" x="42" y="-69.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_c_binding</text>
-</a>
-</g>
-</g>
-<!-- module~program_termination_s&#45;&gt;iso_c_binding -->
-<g id="module~~program_termination_s~~UsesGraph_edge3" class="edge">
-<title>module~program_termination_s&#45;&gt;iso_c_binding</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M297.96,-71.25C285.98,-71.15 273.62,-71.06 262,-71 198.89,-70.69 183.11,-70.59 120,-71 111.73,-71.05 102.96,-71.14 94.42,-71.24"/>
-<polygon fill="#000000" stroke="#000000" points="94.11,-67.74 84.16,-71.37 94.2,-74.74 94.11,-67.74"/>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M336.39,-84.17C315.86,-92.71 287.45,-104.14 262,-113 255.95,-115.11 249.55,-117.2 243.19,-119.21"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="241.8,-115.97 233.28,-122.27 243.87,-122.66 241.8,-115.97"/>
 </g>
 <!-- module~program_termination_m -->
-<g id="module~~program_termination_s~~UsesGraph_node5" class="node">
+<g id="module~~program_termination_s~~UsesGraph_node3" class="node">
 <title>module~program_termination_m</title>
-<g id="a_module~~program_termination_s~~UsesGraph_node5"><a xlink:href=".././module/program_termination_m.html" xlink:title="program_termination_m">
-<polygon fill="#337ab7" stroke="#337ab7" points="262,-24 120,-24 120,0 262,0 262,-24"/>
-<text text-anchor="middle" x="191" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">program_termination_m</text>
+<g id="a_module~~program_termination_s~~UsesGraph_node3"><a xlink:href=".././module/program_termination_m.html" xlink:title="program_termination_m">
+<polygon fill="#337ab7" stroke="#337ab7" points="262,-104 120,-104 120,-80 262,-80 262,-104"/>
+<text text-anchor="middle" x="191" y="-89.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">program_termination_m</text>
 </a>
 </g>
 </g>
 <!-- module~program_termination_s&#45;&gt;module~program_termination_m -->
 <g id="module~~program_termination_s~~UsesGraph_edge4" class="edge">
 <title>module~program_termination_s&#45;&gt;module~program_termination_m</title>
-<path fill="none" stroke="#000000" d="M329.99,-59.86C302.94,-50.47 265.31,-37.43 236.19,-27.32"/>
-<polygon fill="#000000" stroke="#000000" points="237.26,-23.99 226.66,-24.02 234.96,-30.6 237.26,-23.99"/>
+<path fill="none" stroke="#ff0000" d="M297.62,-79.79C289.23,-80.76 280.59,-81.76 272.04,-82.75"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="271.58,-79.28 262.05,-83.9 272.39,-86.23 271.58,-79.28"/>
+</g>
+<!-- iso_c_binding -->
+<g id="module~~program_termination_s~~UsesGraph_node4" class="node">
+<title>iso_c_binding</title>
+<g id="a_module~~program_termination_s~~UsesGraph_node4"><a xlink:href="https://gcc.gnu.org/onlinedocs/gfortran/ISO_005fC_005fBINDING.html#ISO_005fC_005fBINDING" xlink:title="iso_c_binding">
+<polygon fill="#337ab7" stroke="#337ab7" points="84,-105 0,-105 0,-81 84,-81 84,-105"/>
+<text text-anchor="middle" x="42" y="-90.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_c_binding</text>
+</a>
+</g>
+</g>
+<!-- module~program_termination_s&#45;&gt;iso_c_binding -->
+<g id="module~~program_termination_s~~UsesGraph_edge2" class="edge">
+<title>module~program_termination_s&#45;&gt;iso_c_binding</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M297.84,-66.58C248.41,-63.84 179.71,-62.64 120,-71 109.25,-72.51 97.9,-75.14 87.31,-78.07"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="86.06,-74.79 77.44,-80.95 88.02,-81.51 86.06,-74.79"/>
+</g>
+<!-- iso_fortran_env -->
+<g id="module~~program_termination_s~~UsesGraph_node5" class="node">
+<title>iso_fortran_env</title>
+<g id="a_module~~program_termination_s~~UsesGraph_node5"><a xlink:href="https://gcc.gnu.org/onlinedocs/gfortran/ISO_005fFORTRAN_005fENV.html" xlink:title="iso_fortran_env">
+<polygon fill="#337ab7" stroke="#337ab7" points="238,-24 144,-24 144,0 238,0 238,-24"/>
+<text text-anchor="middle" x="191" y="-9.6" font-family="Helvetica,sans-Serif" font-size="10.50" fill="white">iso_fortran_env</text>
+</a>
+</g>
+</g>
+<!-- module~program_termination_s&#45;&gt;iso_fortran_env -->
+<g id="module~~program_termination_s~~UsesGraph_edge3" class="edge">
+<title>module~program_termination_s&#45;&gt;iso_fortran_env</title>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M329.99,-59.86C302.94,-50.47 265.31,-37.43 236.19,-27.32"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="237.26,-23.99 226.66,-24.02 234.96,-30.6 237.26,-23.99"/>
 </g>
 <!-- module~caffeine_h_m&#45;&gt;iso_c_binding -->
 <g id="module~~program_termination_s~~UsesGraph_edge5" class="edge">
 <title>module~caffeine_h_m&#45;&gt;iso_c_binding</title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M148.66,-86.38C131.77,-84.08 112.05,-81.39 94.25,-78.97"/>
-<polygon fill="#000000" stroke="#000000" points="94.41,-75.46 84.03,-77.58 93.47,-82.4 94.41,-75.46"/>
+<path fill="none" stroke="#ff0000" stroke-dasharray="5,2" d="M148.66,-122.47C131.61,-117.71 111.68,-112.16 93.75,-107.16"/>
+<polygon fill="#ff0000" stroke="#ff0000" points="94.6,-103.76 84.03,-104.44 92.72,-110.5 94.6,-103.76"/>
 </g>
 </g>
 </svg>
@@ -289,7 +290,7 @@
     
     <p>Solid arrows point from a submodule to the (sub)module which it is
     descended from. Dashed arrows point from a module or program unit to 
-    modules which it uses.
+    modules which it uses. Where possible, edges connecting nodes are given different colours to make them easier to distinguish in large graphs.
     </p>
     </div></div></div></div>
       </li>
@@ -306,10 +307,10 @@
   <div class="panel-heading text-left"><h3 class="panel-title"><a data-toggle="collapse" href="#modprocs-1">Module Procedures</a></h3></div>
   <div id="modprocs-1" class="panel-collapse collapse">
     <div class="list-group">
-      <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_stop_integer">caf_stop_integer</a>
-      <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_stop_character">caf_stop_character</a>
       <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_error_stop_character">caf_error_stop_character</a>
       <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_error_stop_integer">caf_error_stop_integer</a>
+      <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_stop_character">caf_stop_character</a>
+      <a class="list-group-item" href="../module/program_termination_s.html#proc-caf_stop_integer">caf_stop_integer</a>
     </div>
   </div>
 </div>
@@ -331,24 +332,6 @@
         <section>
         <h2>Module Procedures</h2>
           <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-caf_stop_integer"></span><h3>module procedure <a href='../proc/caf_stop_integer.html'>caf_stop_integer</a> <small>module procedure caf_stop_integer()</small></h3></div>
-  <div class="panel-body">
-           
-<h4>Arguments</h4>      <em>None</em>
-
-  </div>
-  </div>
-
-          <div class="panel panel-default">
-  <div class="panel-heading codesum"><span class="anchor" id="proc-caf_stop_character"></span><h3>module procedure <a href='../proc/caf_stop_character.html'>caf_stop_character</a> <small>module procedure caf_stop_character()</small></h3></div>
-  <div class="panel-body">
-           
-<h4>Arguments</h4>      <em>None</em>
-
-  </div>
-  </div>
-
-          <div class="panel panel-default">
   <div class="panel-heading codesum"><span class="anchor" id="proc-caf_error_stop_character"></span><h3>module procedure <a href='../proc/caf_error_stop_character.html'>caf_error_stop_character</a> <small>module procedure caf_error_stop_character()</small></h3></div>
   <div class="panel-body">
            
@@ -366,6 +349,24 @@
   </div>
   </div>
 
+          <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-caf_stop_character"></span><h3>module procedure <a href='../proc/caf_stop_character.html'>caf_stop_character</a> <small>module procedure caf_stop_character()</small></h3></div>
+  <div class="panel-body">
+           
+<h4>Arguments</h4>      <em>None</em>
+
+  </div>
+  </div>
+
+          <div class="panel panel-default">
+  <div class="panel-heading codesum"><span class="anchor" id="proc-caf_stop_integer"></span><h3>module procedure <a href='../proc/caf_stop_integer.html'>caf_stop_integer</a> <small>module procedure caf_stop_integer()</small></h3></div>
+  <div class="panel-body">
+           
+<h4>Arguments</h4>      <em>None</em>
+
+  </div>
+  </div>
+
         </section>    
     
     </div>
@@ -376,14 +377,14 @@
     <footer>
       <div class="container">
       <div class="row">
-        <div class="col-xs-6 col-md-6"><p>Caffeine library was developed by <br>&copy; 2022 
+        <div class="col-xs-6 col-md-6"><p>Caffeine was developed by Lawrence Berkeley National Laboratory<br>&copy; 2022 
 </p>
         </div>
         <div class="col-xs-6 col-md-6">
           <p class="text-right">
             Documentation generated by 
             <a href="https://github.com/Fortran-FOSS-Programmers/ford">FORD</a>
-          </p>
+ on 2022-03-02 15:00            </p>
         </div>
       </div>
       <br>
